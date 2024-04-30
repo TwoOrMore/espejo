@@ -1,4 +1,4 @@
-PROJECT := jsoncomparison
+PROJECT := espejo
 
 VENV := .venv
 REPORTS := .reports

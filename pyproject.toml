@@ -1,18 +1,19 @@
 [tool.poetry]
-name = "jsoncomparison"
-version = "1.1.0"
-description = "json compare utility"
+name = "expejo"
+version = "0.1.0"
+description = "a compare utility"
 license = "MIT"
 authors = [
     "Gleb Karpushkin <rugleb@gmail.com>",
+    "Jorge Gueorguiev Garcia <jorge.gueorguiev@twoormore.eu>",
 ]
 maintainers = [
-    "Gleb Karpushkin <rugleb@gmail.com>",
+    "Jorge Gueorguiev Garcia <jorge.gueorguiev@twoormore.eu>",
 ]
 readme = "README.md"
-homepage = "https://pypi.org/project/jsoncomparison"
-repository = "https://github.com/rugleb/JsonCompare"
-documentation = "https://github.com/rugleb/JsonCompare/blob/master/README.md"
+homepage = "https://pypi.org/project/espejo"
+repository = "https://github.com/twoormore/espejo"
+documentation = "https://github.com/twoormore/espejo/blob/master/README.md"
 keywords = [
     "json",
     "compare",

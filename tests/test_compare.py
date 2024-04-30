@@ -1,6 +1,6 @@
 import unittest
 
-from jsoncomparison import (
+from espejo import (
     NO_DIFF,
     Compare,
     KeyNotExist,
@@ -9,7 +9,7 @@ from jsoncomparison import (
     ValueNotFound,
     ValuesNotEqual,
 )
-from jsoncomparison.errors import UnexpectedKey
+from espejo.errors import UnexpectedKey
 
 from . import load_json
 

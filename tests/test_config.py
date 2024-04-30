@@ -1,6 +1,6 @@
 import unittest
 
-from jsoncomparison.config import Config
+from espejo.config import Config
 
 
 class ConfigTestCase(unittest.TestCase):

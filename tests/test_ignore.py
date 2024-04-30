@@ -1,6 +1,6 @@
 import unittest
 
-from jsoncomparison.ignore import Ignore
+from espejo.ignore import Ignore
 
 from . import load_json
 

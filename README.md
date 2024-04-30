@@ -1,17 +1,19 @@
-## The JSON Comparison package
+## A Comparison package
 
-[![Build Status](https://travis-ci.com/rugleb/JsonCompare.svg?branch=master)](https://travis-ci.com/rugleb/JsonCompare)
-[![codecov](https://codecov.io/gh/rugleb/JsonCompare/branch/master/graph/badge.svg)](https://codecov.io/gh/rugleb/JsonCompare)
+<!-- [![Build Status](https://travis-ci.com/rugleb/JsonCompare.svg?branch=master)](https://travis-ci.com/rugleb/JsonCompare) -->
+<!-- [![codecov](https://codecov.io/gh/rugleb/JsonCompare/branch/master/graph/badge.svg)](https://codecov.io/gh/rugleb/JsonCompare) -->
 [![Python 3.6+](https://img.shields.io/badge/python-3.6+-green.svg)](https://www.python.org/downloads/release/python-360/)
-[![PyPI version](https://badge.fury.io/py/jsoncomparison.svg)](https://badge.fury.io/py/jsoncomparison)
+<!-- [![PyPI version](https://badge.fury.io/py/espejo.svg)](https://badge.fury.io/py/espejo) -->
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This package is designed to compare two objects with a JSON-like structure and data types.
 
+The package extends on the work done by [Karpushkin Gleb](https://github.com/rugleb).
+
 ### Install
 
 ```
-pip install -U pip jsoncomparison
+pip install -U pip espejo
 ```
 
 ### Usage
@@ -25,12 +27,12 @@ Actual - the given data object.
 Then we will transfer these objects to check and identify the difference between them:
 
 ```python
-from jsoncomparison import Compare, NO_DIFF
+from espejo import Compare, NO_DIFF
 
 
 expected = {
     "project": {
-        "name": "jsoncomparison",
+        "name": "espejo",
         "version": "0.1",
         "license": "MIT",
         "language": {
@@ -46,7 +48,7 @@ expected = {
 
 actual = {
     "project": {
-        "name": "jsoncomparison",
+        "name": "espejo",
         "version": 0.1,
         "license": "Apache 2.0",
         "language": {
@@ -107,7 +109,7 @@ The `check` method returns a dictionary of differences between `expected` and `a
 The default configuration can be overridden by passing the config dictionary to the Compare class constructor:
 
 ```python
-from jsoncomparison import Compare
+from espejo import Compare
 
 config = {
     "output": {
@@ -158,7 +160,7 @@ In this case, you can define exception rules and pass them to the class construc
 Let's go back to the example above:
 
 ```python
-from jsoncomparison import Compare, NO_DIFF
+from espejo import Compare, NO_DIFF
 
 
 expected = {
@@ -194,4 +196,4 @@ the comparison test has been successfully passed!
 ### Links
 
 You can see a more complex comparison example that I used to test the correct operation of an application:
-[link](https://github.com/rugleb/jsoncomparison/blob/master/tests/test_compare.py#L84).
+[link](https://github.com/twoormore/espejo/blob/master/tests/test_compare.py#L84).
