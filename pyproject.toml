@@ -33,12 +33,19 @@ add-trailing-comma = "^3.1"
 bandit = "^1.7"
 codecov = "^2.1"
 coverage = "^7.3"
-flake8 = "^6.1"
+flake8 = "^7.0.0"
 isort = "^5.0"
 mypy = "^1.10"
 pytest = "^8.0.0"
 pytest-sugar = "^1.0.0"
 twine = "^4.0"
+
+
+[tool.poetry.group.lsp.dependencies]
+python-lsp-server = {extras = ["flake8", "isort", "rope"], version = "^1.11.0"}
+pylsp-rope = "^0.1.16"
+python-lsp-isort = "^0.1"
+pylsp-mypy = "^0.6.8"
 
 [tool.pytest.ini_options]
 addopts = "--cov-report term --cov-report html --cov-report xml"
