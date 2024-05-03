@@ -10,9 +10,10 @@ class ConfigTestCase(unittest.TestCase):
             'language': {
                 'python': {
                     'version': [
-                        3.5,
-                        3.6,
-                        3.7,
+                        3.9,
+                        3.10,
+                        3.11,
+                        3.12,
                     ],
                 },
                 'php': 7.2,

@@ -27,17 +27,17 @@ classifiers = [
 [tool.poetry.dependencies]
 python = "^3.9"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
+pytest-cov = "^5.0.0"
 add-trailing-comma = "^3.1"
 bandit = "^1.7"
 codecov = "^2.1"
 coverage = "^7.3"
 flake8 = "^6.1"
-isort = "^5.12"
-mypy = "^1.7"
-pytest = "^7.4"
-pytest-cov = "^4.1"
-pytest-sugar = "^0.9"
+isort = "^5.0"
+mypy = "^1.10"
+pytest = "^8.0.0"
+pytest-sugar = "^1.0.0"
 twine = "^4.0"
 
 [tool.pytest.ini_options]
