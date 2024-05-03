@@ -43,7 +43,7 @@ trailing-lint: setup
 	@poetry run add-trailing-comma $(PY_FILES)
 
 test: setup
-	poetry run pytest --cov=$(PROJECT)
+	poetry run pytest --cov=$(PROJECT) --cov-branch
 
 format: isort trailing
 
