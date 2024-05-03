@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "expejo"
+name = "espejo"
 version = "0.1.0"
 description = "a compare utility"
 license = "MIT"
