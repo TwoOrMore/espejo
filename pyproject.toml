@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "espejo"
-version = "0.1.1"
+version = "0.1.2"
 description = "a compare utility"
 license = "MIT"
 authors = [
